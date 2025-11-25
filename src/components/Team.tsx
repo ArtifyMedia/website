@@ -3,7 +3,7 @@ export function Team() {
     {
       name: 'Moiz Khan',
       title: 'Director of AI',
-      image: '/WhatsApp Image 2025-11-26 at 1.55.02 AM.jpeg',
+      image: '/WhatsApp Image 2025-11-26 at 1.55.02 AM copy.jpeg',
       bio: "I'm Moiz - I can't sort my own life out, but I can turn your business into a high-efficiency, revenue-producing machine.",
       description: (
         <>
@@ -15,7 +15,7 @@ export function Team() {
     {
       name: 'Haad Alvi',
       title: 'Director of Marketing',
-      image: '/WhatsApp Image 2025-11-26 at 1.52.55 AM.jpeg',
+      image: '/WhatsApp Image 2025-11-26 at 1.52.55 AM copy.jpeg',
       bio: "I misplace my own charger daily, but I can turn your entire funnel into a predictable revenue machine.",
       description: (
         <>
@@ -50,15 +50,15 @@ export function Team() {
               className="backdrop-blur-sm bg-gray-50/80 border border-[#ccff00]/20 rounded-3xl p-8 md:p-12 relative shadow-lg shadow-[#ccff00]/5"
             >
               <div className={`grid md:grid-cols-2 gap-8 md:gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
-                <div className={index % 2 === 1 ? 'md:col-start-2' : ''}>
+                <div className={`${index % 2 === 1 ? 'md:col-start-2 order-1 md:order-2' : 'order-2 md:order-1'}`}>
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.title}`}
-                    className="w-full h-auto rounded-2xl shadow-xl object-cover aspect-[9/16] max-h-[600px] mx-auto"
+                    className="w-full h-auto rounded-2xl shadow-xl"
                   />
                 </div>
 
-                <div className={`text-center md:text-left ${index % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''}`}>
+                <div className={`text-center md:text-left ${index % 2 === 1 ? 'md:col-start-1 md:row-start-1 order-2 md:order-1' : 'order-1 md:order-2'}`}>
                   <div className="mb-6">
                     <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                       {member.name}
