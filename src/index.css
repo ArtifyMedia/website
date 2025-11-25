@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply antialiased transition-colors duration-300;
+    font-family: 'Urbanist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    font-variation-settings: 'opsz' 32;
+    overflow-x: hidden;
+    @apply bg-gray-50 text-gray-900;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  button, a, img {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .delay-1000 {
+    animation-delay: 1s;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.phone-input input {
+  width: 100%;
+  background: #f9fafb;
+  border: 1px solid rgb(209 213 219);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  color: rgb(17 24 39);
+  transition: all 0.2s;
+}
+
+.phone-input input:focus {
+  outline: none; /* Remove default outline */
+  border-color: rgba(var(--color-primary-dark-rgb), 0.5); /* Use primary-dark for border */
+  ring: 1px solid rgba(var(--color-primary-dark-rgb), 0.2); /* Use primary-dark for ring */
+}
+
+.phone-input input::placeholder {
+  color: rgb(107 114 128);
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+.highlight-text {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight-text::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #ccff00;
+  border-radius: 0.5rem;
+  transform: skewX(-12deg);
+  z-index: -1;
+}
+
+.highlight-text {
+  color: black;
+  font-weight: bold;
+  padding: 0 0.5rem;
+  z-index: 1;
+}
