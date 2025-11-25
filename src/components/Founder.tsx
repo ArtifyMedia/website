@@ -25,10 +25,13 @@ export function Founder() {
 
               <div className="order-1 md:order-2 text-center md:text-left">
                 <blockquote className="text-xl md:text-2xl lg:text-3xl text-gray-900 font-light leading-relaxed mb-8">
-                  "Cinematography isn't about cameras — it's about{' '}
-                  <span className="text-[#ccff00] font-semibold">emotion</span>,{' '}
-                  <span className="text-[#ccff00] font-semibold">timing</span>, and{' '}
-                  <span className="text-[#ccff00] font-semibold">precision</span>."
+                  I'm Farrukh — the Founder & creative director who can't organise his sleep schedule but can organise your brand's entire visual identity.
+                  <br />
+                  <br />
+                  I turn{' '}
+                  <span className="text-[#ccff00] font-semibold">luxury cars</span>,{' '}
+                  <span className="text-[#ccff00] font-semibold">real estate</span>, and{' '}
+                  <span className="text-[#ccff00] font-semibold">products</span> into cinematic showpieces your competitors wish they had.
                 </blockquote>
 
                 <div className="flex items-center justify-center md:justify-start gap-4">
