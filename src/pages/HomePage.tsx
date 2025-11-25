@@ -5,6 +5,7 @@ import { ServicesCatalog } from '../components/ServicesCatalog';
 import { WhyChoose } from '../components/WhyChoose';
 import { Portfolio } from '../components/Portfolio';
 import { Founder } from '../components/Founder';
+import { Team } from '../components/Team';
 import { Blog } from '../components/Blog';
 import { Partner } from '../components/Partner';
 
@@ -18,6 +19,7 @@ export function HomePage() {
       <WhyChoose />
       <Portfolio />
       <Founder />
+      <Team />
       <Blog />
       <Partner />
     </>
