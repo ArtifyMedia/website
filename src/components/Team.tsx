@@ -3,7 +3,7 @@ export function Team() {
     {
       name: 'Moiz Khan',
       title: 'Director of AI',
-      image: '/WhatsApp Image 2025-11-26 at 1.55.02 AM copy.jpeg',
+      image: '/1764107555382(1).jpg',
       bio: "I'm Moiz - I can't sort my own life out, but I can turn your business into a high-efficiency, revenue-producing machine.",
       description: (
         <>
@@ -15,7 +15,7 @@ export function Team() {
     {
       name: 'Haad Alvi',
       title: 'Director of Marketing',
-      image: '/WhatsApp Image 2025-11-26 at 1.52.55 AM copy.jpeg',
+      image: '/1764107033769.jpg',
       bio: "I misplace my own charger daily, but I can turn your entire funnel into a predictable revenue machine.",
       description: (
         <>
