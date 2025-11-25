@@ -54,7 +54,7 @@ export function Team() {
                   <img
                     src={member.image}
                     alt={`${member.name} - ${member.title}`}
-                    className="w-full h-auto rounded-2xl shadow-xl object-cover aspect-video"
+                    className="w-full h-auto rounded-2xl shadow-xl object-cover aspect-[9/16] max-h-[600px] mx-auto"
                   />
                 </div>
 
