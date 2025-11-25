@@ -49,21 +49,21 @@ export function PartnerApplyPage() {
 
   if (submitted) {
     return (
-      <div className="relative min-h-screen bg-white pt-20 flex items-center justify-center">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(204,255,0,0.05)_0%,transparent_50%)]"></div>
+      <div className="relative min-h-screen bg-[#060606] pt-20 flex items-center justify-center">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(34,197,94,0.05)_0%,transparent_50%)]"></div>
         <div className="relative max-w-2xl mx-auto px-4 text-center">
-          <div className="w-20 h-20 bg-[#ccff00] rounded-full flex items-center justify-center mx-auto mb-6">
+          <div className="w-20 h-20 bg-[#C8F31D] rounded-full flex items-center justify-center mx-auto mb-6">
             <CheckCircle2 className="w-12 h-12 text-black" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Application Received!
           </h1>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl text-gray-400 mb-8">
             Thank you for your interest in partnering with Artify Media. Our team will review your application and get back to you within 24-48 hours.
           </p>
           <a
             href="/"
-            className="inline-block px-8 py-4 bg-[#ccff00] hover:bg-[#ccff00]/90 text-black font-bold rounded-xl transition-all"
+            className="inline-block px-8 py-4 bg-[#C8F31D] hover:bg-[#C8F31D]/90 text-black font-bold rounded-xl transition-all"
           >
             Back to Home
           </a>
@@ -73,6 +73,7 @@ export function PartnerApplyPage() {
   }
 
   return (
+    <div className="relative min-h-screen bg-[#060606] pt-20">
     <div className="relative min-h-screen bg-white pt-20">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(204,255,0,0.03)_0%,transparent_50%)]"></div>
 
@@ -81,16 +82,16 @@ export function PartnerApplyPage() {
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block mb-6">
-                <div className="px-4 py-2 bg-[#ccff00]/10 border border-[#ccff00]/30 rounded-full">
+                <div className="px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
                   <span className="text-primary-dark text-sm font-semibold">PARTNER APPLICATION</span>
                 </div>
               </div>
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
                 Apply to{' '}
                 <span className="inline-block relative">
                   <span className="absolute inset-0 bg-[#ccff00] rounded-lg transform -skew-x-6"></span>
                   <span className="relative text-black font-bold px-2">
-                    Partner With Us
+                  Partner With Us
                   </span>
                 </span>
               </h1>
@@ -99,6 +100,7 @@ export function PartnerApplyPage() {
               </p>
             </div>
 
+            <form onSubmit={handleSubmit} className="backdrop-blur-sm bg-white/5 border border-[#C8F31D]/20 rounded-3xl p-8 md:p-12">
             <form onSubmit={handleSubmit} className="backdrop-blur-sm bg-white/80 border border-[#ccff00]/20 rounded-3xl p-8 md:p-12">
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
@@ -187,7 +189,7 @@ export function PartnerApplyPage() {
                     <option value="freelancer">Freelancer Partnership</option>
                     <option value="reseller">Reseller Partnership</option>
                   </select>
-                  <p className="text-xs text-gray-600 mt-2">
+                  <p className="text-xs text-gray-400 mt-2">
                     Note: This is a service partnership with no equity involvement
                   </p>
                 </div>
@@ -220,4 +222,9 @@ export function PartnerApplyPage() {
       </div>
     </div>
   );
+}
+
+  )
+}
+  )
 }
