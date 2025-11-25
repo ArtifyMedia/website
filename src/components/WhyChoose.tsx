@@ -75,18 +75,6 @@ export function WhyChoose() {
             );
           })}
         </div>
-
-        <div className="mt-16 max-w-3xl mx-auto">
-          <div className="backdrop-blur-sm bg-white border border-[#ccff00]/20 rounded-2xl p-8 text-center shadow-lg shadow-[#ccff00]/5">
-            <p className="text-xl text-gray-900 leading-relaxed">
-              "Cinematography isn't about cameras — it's about{' '}
-              <span className="text-primary-dark font-semibold">emotion</span>,{' '}
-              <span className="text-primary-dark font-semibold">timing</span>, and{' '}
-              <span className="text-primary-dark font-semibold">precision</span>."
-            </p>
-            <p className="text-gray-600 mt-4">— Farrukh Ali, Founder</p>
-          </div>
-        </div>
       </div>
     </section>
   );
