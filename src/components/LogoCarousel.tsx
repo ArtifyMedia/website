@@ -27,7 +27,7 @@ const LogoCarousel = ({
 }: LogoCarouselProps) => {
   return (
     <section className="py-12 md:py-16 bg-gray-50">
-      <div className="container flex flex-col items-center text-center">
+      <div className="container mx-auto flex flex-col items-center text-center">
         <h2 className="mb-10 text-2xl font-bold text-gray-900 lg:text-3xl">
           {heading}
         </h2>
