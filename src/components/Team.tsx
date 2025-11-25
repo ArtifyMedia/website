@@ -5,16 +5,24 @@ export function Team() {
       title: 'Director of AI',
       image: '/WhatsApp Image 2025-11-26 at 1.55.02 AM.jpeg',
       bio: "I'm Moiz - I can't sort my own life out, but I can turn your business into a high-efficiency, revenue-producing machine.",
-      description: "I build AI automations and custom workflows that remove bottlenecks, eliminate wasted time, and fix every system draining your revenue. If it repeats, I automate it. If it leaks money, I plug it.",
-      highlights: ['AI automations', 'custom workflows', 'revenue systems']
+      description: (
+        <>
+          I build <span className="text-[#ccff00] font-semibold">AI automations</span> and{' '}
+          <span className="text-[#ccff00] font-semibold">custom workflows</span> that remove bottlenecks, eliminate wasted time, and fix every system draining your revenue. If it repeats, I automate it. If it leaks money, I plug it.
+        </>
+      )
     },
     {
       name: 'Haad Alvi',
       title: 'Director of Marketing',
       image: '/WhatsApp Image 2025-11-26 at 1.52.55 AM.jpeg',
       bio: "I misplace my own charger daily, but I can turn your entire funnel into a predictable revenue machine.",
-      description: "I'm Haad. I take broken pixels, chaotic CRMs, and leaky workflows and rebuild them into clean, efficient growth systems.",
-      highlights: ['funnels', 'CRMs', 'growth systems']
+      description: (
+        <>
+          I'm Haad. I take broken pixels, chaotic <span className="text-[#ccff00] font-semibold">CRMs</span>, and leaky workflows and rebuild them into clean, efficient{' '}
+          <span className="text-[#ccff00] font-semibold">growth systems</span>.
+        </>
+      )
     }
   ];
 
@@ -63,13 +71,7 @@ export function Team() {
                       {member.bio}
                     </p>
                     <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                      {member.description.split(member.highlights[0])[0]}
-                      <span className="text-[#ccff00] font-semibold">{member.highlights[0]}</span>
-                      {member.description.split(member.highlights[0])[1].split(member.highlights[1])[0]}
-                      <span className="text-[#ccff00] font-semibold">{member.highlights[1]}</span>
-                      {member.description.split(member.highlights[1])[1].split(member.highlights[2])[0]}
-                      <span className="text-[#ccff00] font-semibold">{member.highlights[2]}</span>
-                      {member.description.split(member.highlights[2])[1]}
+                      {member.description}
                     </p>
                   </div>
                 </div>
